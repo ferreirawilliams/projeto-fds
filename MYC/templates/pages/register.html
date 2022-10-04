@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Usuário</title>
+    <link rel="stylesheet" href="register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+      integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/a560e25e8e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section>
+      <div class="rgba">
+        <form action="registro">
+          <fieldset>
+            <h1>Cadastro de Usuário</h1>
+            <div class="formulario">
+              <div class="left">
+                <div class="input-field">
+                  <i class="fa-solid fa-user icon"></i
+                  ><input
+                    type="text"
+                    name="usuario"
+                    id="user"
+                    placeholder="Digite um nome de Usuário"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <i class="fa-solid fa-lock icon"></i
+                  ><input
+                    type="password"
+                    name="senha"
+                    id="password"
+                    placeholder="Digite a sua senha"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <i class="fa-solid fa-envelope icon"></i
+                  ><input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <i class="fa-solid fa-location-dot icon"></i
+                  ><input
+                    type="text"
+                    name="localizacao"
+                    id="location"
+                    placeholder="Digite a localização"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="right">
+                <select name="TipoPao" id="" class="dropdown" required>
+                  <option value="#" class="opcoes" selected hidden>
+                    Tipo favorito de pao
+                  </option>
+                  <option value="pao_leite" class="opcoes">Pão de Leite</option>
+                  <option value="pao_australiano" class="opcoes">
+                    Pão Australiano
+                  </option>
+                  <option value="pao_brioche" class="opcoes">
+                    Pão Brioche
+                  </option>
+                  <option value="pao_frances" class="opcoes">
+                    Pão Francês
+                  </option>
+                  <option value="pão_fermentação_natural" class="opcoes">
+                    Pão de fermentação natural
+                  </option>
+                </select>
+                <select name="PontoCarne" id="" class="dropdown" required>
+                  <option value="#" class="opcoes" selected hidden>
+                    Ponto da carne
+                  </option>
+                  <option value="bleu" class="opcoes">Bleu(Mal passado)</option>
+                  <option value="ponto_pra_menos" class="opcoes">
+                    Ponto para menos
+                  </option>
+                  <option value="ao_ponto" class="opcoes">Ao Ponto</option>
+                  <option value="ponto_pra_mais" class="opcoes">
+                    Ponto para mais
+                  </option>
+                  <option value="bem_passado" class="opcoes">
+                    Bem passado
+                  </option>
+                </select>
+                <select name="FavCarne" id="" class="dropdown" required>
+                  <option value="#" selected hidden>
+                    Tipo favorito da carne
+                  </option>
+                  <option value="angus" class="opcoes">angus</option>
+                  <option value="patinho" class="opcoes">patinho</option>
+                  <option value="acém" class="opcoes">acém</option>
+                  <option value="fraldinha" class="opcoes">fraldinha</option>
+                  <option value="#" class="opcoes">angus</option>
+                </select>
+              </div>
+            </div>
+            <div class="botao">
+              <button type="submit">REGISTRAR-SE</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% comment %}
+    <link rel="stylesheet" href="{% static 'myc/css/register.css' %}" />
+    {% endcomment %}
+    <title>Register</title>
+  </head>
+  <body>
+    {% block content %}
+    <h1>Cadastro de Usuario {{request.session.number}}</h1>
+    <form action="{% url 'MYC:create' %}" method="POST">
+      {% csrf_token %}
+      <fieldset>
+        {% for field in form %}
+        <div class="form-group">
+          <label for="{{field.id_for_label}}">{{field.label}}</label>
+          {{field}} {% if field.help_text %}
+          <p class="help-text">{{field.help_text}}</p>
+          {% endif %} {{field.errors}}
+        </div>
+        {% endfor %}
+        <button type="submit">Registrar</button>
+      </fieldset>
+      {% endblock content %}
+    </form>
+  </body>
+</html>

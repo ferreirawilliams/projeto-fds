@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Usuário</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="rgba">
+        <form action="registro">
+          <fieldset>
+            <h1>Cadastro de estabelecimento</h1>
+            <div class="formulario">
+              <div class="left">
+                <div class="input-field">
+                  <i class="fa-solid fa-user icon"></i
+                  ><input
+                    type="text"
+                    name="usuario"
+                    id="user"
+                    placeholder="Digite o nome do estabelecimento"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <i class="fa-solid fa-lock icon"></i
+                  ><input
+                    type="password"
+                    name="senha"
+                    id="password"
+                    placeholder="Digite a senha"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <i class="fa-solid fa-envelope icon"></i
+                  ><input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Digite o e-mail coorporativo"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <i class="fa-solid fa-location-dot icon"></i
+                  ><input
+                    type="text"
+                    name="localizacao"
+                    id="location"
+                    placeholder="Digite a localização"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="right">
+                <h4>
+                  Tem delivery?
+                  <select
+                    name="dropdown_delivery"
+                    id=""
+                    class="dropdown_delivery"
+                    required
+                  >
+                    <option value="#" selected hidden>select</option>
+                    <option value="angus" class="opcoes">Sim</option>
+                    <option value="patinho" class="opcoes">Não</option>
+                  </select>
+                </h4>
+              </div>
+            </div>
+            <div class="botao">
+              <button type="submit">REGISTRAR-SE</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

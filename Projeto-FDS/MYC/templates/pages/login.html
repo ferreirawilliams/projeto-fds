@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>Meat Your Critics</h1>
+      </header>
+      <div class="main-content rgba">
+        <div class="login">
+          <h1>Entrar</h1>
+          <select name="DropdownLogin" id="DropdownLogin">
+            <option disabled selected hidden>selecione</option>
+            <option value="usuario_login">Usuario</option>
+            <option value="estabelecimeto_login">Estabelecimento</option>
+          </select>
+          <input type="text" name="nome" id="nome" placeholder="Nome" />
+          <input type="password" name="senha" id="senha" placeholder="Senha" />
+          <button type="submit">Entrar</button>
+          <p class="texto2">
+            Ainda não possui uma conta? Registre-se agora como
+            <a href="{% url 'MYC:estab' %}"><i>estabelecimento</i></a> ou
+            <a href="{% url 'MYC:usuario' %}"><i>usuário</i></a
+            >.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
