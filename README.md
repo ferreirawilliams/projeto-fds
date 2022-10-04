@@ -23,10 +23,7 @@ feedbacks de partes especificas do alimento. Dessa forma, contribuindo para a me
 <hr></hr>
 <h2><i>Participantes:</i></h2>
 <ul>
-<li><a href="https://github.com/walterbfilho">Walter Barreto</a></li>
 <li><a href="https://github.com/willa098">Williams Ferreira</a></li>
-<li><a href="https://github.com/DiegoRodrigues76">Diego Rodrigues "Sawyer"</a></li>
-<li><a href="https://github.com/RodrigoCavalcanti1">Rodrigo Cavalcanti</a></li>
 <li><a href="https://github.com/m4riana">Mariana Correia</a></li>
 </ul>
 
